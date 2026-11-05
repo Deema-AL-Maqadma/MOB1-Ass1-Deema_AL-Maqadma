@@ -31,10 +31,7 @@ This repository contains the complete implementation of **Assignment 1**, enhanc
 ## 📹 Video Demonstrations
 
 * **YouTube Video Link (Demo):**  
-  👉 [Watch the Full App Demonstration on YouTube](https://www.youtube.com) *(الصقي رابط اليوتيوب هنا بعد رفع الفيديو)*
-
-* **Google Drive Link (Official Course Requirement):**  
-  📁 [Access the Video on Google Drive](https://drive.google.com) *(الصقي رابط Google Drive هنا بعد الرفع)*
+  👉 [Watch the Full App Demonstration on YouTube]([https://www.youtube.com](https://youtu.be/NZsydkrvkoI?si=Gyk25_9V71gteINV)) 
 
 ---
 
