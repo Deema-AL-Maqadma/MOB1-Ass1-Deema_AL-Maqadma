@@ -2,8 +2,8 @@
 
 **Course:** Mobile App Development 1 (ITNM3315)  
 **Instructor:** Eng. Ibrahim O. I. Kaware  
-**Student Name:** Deema Al-Maqadma  
-**Institution:** Al-Aqsa University  
+**Student Name:** Deema AL-Maqadma  
+**Institution:** AL-Aqsa University  
 **Repository:** `MOB1-Ass1-Deema_AL-Maqadma`
 
 ---
