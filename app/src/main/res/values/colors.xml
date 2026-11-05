@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- الألوان الأساسية -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- الألوان المطلوبة في التكليف -->
+    <color name="button_gray">#9E9E9E</color>        <!-- لون زر الصفر في حالة الخمول (0) -->
+    <color name="button_active_zero">#FF9800</color> <!-- لون زر الصفر النشط (برتقالي) -->
+    <color name="button_count_odd">#4CAF50</color>   <!-- لون زر العد عند الأرقام الفردية (أخضر) -->
+    <color name="button_count_even">#2196F3</color>  <!-- لون زر العد عند الأرقام الزوجية (أزرق) -->
+    <color name="count_initial_color">#6200EE</color><!-- اللون الابتدائي لزر العد -->
+    <color name="text_yellow_bg">#FFF000</color>    <!-- خلفية مربع النص الأصفر -->
 </resources>
