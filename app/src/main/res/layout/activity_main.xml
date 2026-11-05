@@ -10,7 +10,26 @@
     android:padding="8dp"
     tools:context=".MainActivity">
 
-    <!-- زر TOAST العلوي -->
+    <!-- المربع الأصفر: يشغل 55% فقط من ارتفاع الشاشة في الأعلى -->
+    <TextView
+        android:id="@+id/text_display_count"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:text="@string/count_initial_value"
+        android:textColor="#3F51B5"
+        android:textSize="140sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.55"
+        app:layout_constraintStart_toEndOf="@+id/button_toast"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.68" />
+
+    <!-- زر TOAST العلوي: يبدأ بمحاذاة أعلى المربع الأصفر -->
     <Button
         android:id="@+id/button_toast"
         android:layout_width="0dp"
@@ -42,13 +61,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_toast" />
 
-    <!-- زر COUNT السفلي -->
+    <!-- زر COUNT السفلي: ينتهي بمحاذاة أسفل المربع الأصفر -->
     <Button
         android:id="@+id/button_count"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="#0000FF"
+        android:backgroundTint="#3F51B5"
         android:onClick="increase_count"
         android:text="@string/button_label_count"
         android:textColor="@android:color/white"
@@ -57,22 +76,5 @@
         app:layout_constraintEnd_toStartOf="@+id/text_display_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_zero" />
-
-    <!-- مربع النص الكبير في اليمين -->
-    <TextView
-        android:id="@+id/text_display_count"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#FFFF00"
-        android:gravity="center"
-        android:text="@string/count_initial_value"
-        android:textColor="#3F51B5"
-        android:textSize="160sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_toast"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.68" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
