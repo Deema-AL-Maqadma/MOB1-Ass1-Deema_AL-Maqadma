@@ -7,14 +7,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:padding="8dp"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <!-- المربع الأصفر: يشغل 55% فقط من ارتفاع الشاشة في الأعلى -->
+    <!-- 1. شريط العنوان الأزرق بكامل العرض في قمة الشاشة -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#3F51B5"
+        app:title="Hello Constraint"
+        app:titleTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 2. المربع الأصفر: يبدأ إجبارياً من تحت الشريط الأزرق ويشغل 55% من الشاشة -->
     <TextView
         android:id="@+id/text_display_count"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:background="#FFFF00"
         android:gravity="center"
         android:text="@string/count_initial_value"
@@ -25,15 +39,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.55"
         app:layout_constraintStart_toEndOf="@+id/button_toast"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:layout_constraintVertical_bias="0.0"
         app:layout_constraintWidth_percent="0.68" />
 
-    <!-- زر TOAST العلوي: يبدأ بمحاذاة أعلى المربع الأصفر -->
+    <!-- 3. زر TOAST -->
     <Button
         android:id="@+id/button_toast"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#3F51B5"
         android:onClick="show_toast"
@@ -45,11 +60,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/text_display_count" />
 
-    <!-- زر ZERO الأوسط -->
+    <!-- 4. زر ZERO -->
     <Button
         android:id="@+id/button_zero"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#A0A0A0"
         android:onClick="reset_zero"
@@ -61,13 +77,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_toast" />
 
-    <!-- زر COUNT السفلي: ينتهي بمحاذاة أسفل المربع الأصفر -->
+    <!-- 5. زر COUNT -->
     <Button
         android:id="@+id/button_count"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="#3F51B5"
+        android:backgroundTint="#0000FF"
         android:onClick="increase_count"
         android:text="@string/button_label_count"
         android:textColor="@android:color/white"
