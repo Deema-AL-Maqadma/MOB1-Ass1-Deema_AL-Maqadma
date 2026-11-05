@@ -1,5 +1,6 @@
 package com.example.hellotoast;
 
+import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ import com.example.hellotoast.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private int count = 0;
+    @SuppressLint("StaticFieldLeak")
     public static ActivityMainBinding mainBinding;
 
     @Override
