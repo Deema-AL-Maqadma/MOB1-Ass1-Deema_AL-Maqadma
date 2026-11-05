@@ -31,7 +31,7 @@ This repository contains the complete implementation of **Assignment 1**, enhanc
 ## 📹 Video Demonstrations
 
 * **YouTube Video Link (Demo):**  
-  👉 [Watch the Full App Demonstration on YouTube]([https://www.youtube.com](https://youtu.be/NZsydkrvkoI?si=Gyk25_9V71gteINV)) 
+  👉 [Watch the Full App Demonstration on YouTube](https://youtu.be/NZsydkrvkoI?si=Gyk25_9V71gteINV) 
 
 ---
 
